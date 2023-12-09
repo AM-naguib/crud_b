@@ -6,7 +6,7 @@ require_once "core/fun.php";
 // $count_cat = count(get_data("./data/category.json"));
 
 ?>
-<h1 class="text-center display-1 border-bottom p-3">Category</h1>
+<h1 class="text-center display-1 border-bottom p-3">Add Category</h1>
 <div class="container">
     <div class="row">
         <div class="col-6 mx-auto">

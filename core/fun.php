@@ -48,3 +48,13 @@ function remove_item($path,$item){
     return $data;
 
 }
+
+
+function check_category($id,$file){
+    foreach($file as $key => $value){
+        if($key == $id){
+            return true;
+        }
+    }
+    return false;
+}

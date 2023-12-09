@@ -4,12 +4,13 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     require_once "../core/fun.php";
     session_start();
     $category = sanitaization($_POST["category"]);
+    print_r($category);
     $erorrs = [];
-    if(require_input($category_data)){
+    if(require_input($category)){
         $erorrs[] = "category is empty";
-    }elseif(min_len($category_data,3)){
+    }elseif(min_len($category,3)){
         $erorrs[] = "category less than 3 char";
-    }elseif(max_len($category_data,30)){
+    }elseif(max_len($category,30)){
         $erorrs[] = "category more than 30 char";
     }
 
