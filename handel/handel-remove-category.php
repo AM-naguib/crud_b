@@ -18,7 +18,7 @@ if($_SERVER["REQUEST_METHOD"] == "GET"){
             
         }else{
 
-            $_SESSION["erorr"] = "category not found";
+            $_SESSION["erorr"] = ["category not found"];
             header("location:../categorys.php");
         }
 
